@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Седона</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <ul class="site-navigation">
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="media.html">Фото и видео</a></li>
+                <li><a href="map.html">Карта штата</a></li>
+                <li><a href="hotels.html">Гостиницы</a></li>
+            </ul>
+        </nav>
+        <a class="header-logo">
+            <img src="img/header-logo.png" alt="Логотип" width="138px" height="70px">
+        </a>
+    </header>
+    <main class="container">
+        <div class="promo">
+            <img src="img/intro.jpg" alt="Welcome to Sedona" width="1200px" height="564px">
+        </div>
+        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <section class="reason">
+            <h2 class="visually-hidden">Преимущества</h2>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+            <ul class="reason-list">
+                <li>
+                    <h3>Настоящий городок</h3>
+                    <span>№1</span>
+                    <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                    <img src="img/real-town.jpg" alt="Real town" width="800px" height="256px">
+                </li>
+                <li>
+                    <h3>Жилье</h3>
+                    <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </li>
+                <li>
+                    <h3>Еда</h3>
+                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+                <li>
+                    <h3>Сувениры</h3>
+                    <p>Не только китайского, но и местного производства</p>
+                </li>
+                <li>
+                    <h3>Там есть мост дьявола</h3>
+                    <span>№2</span>
+                    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                    <img src="img/bridge.jpg" alt="Bridge" width="800px" height="256px">
+                </li>
+                <li>
+                    <h3>Небольшая площадь</h3>
+                    <span>№3</span>
+                    <p>Все достопримечательности находятся очень близко</p>
+                </li>
+                <li>
+                    <h3>Красивая дорога</h3>
+                    <span>№4</span>
+                    <p>Ехать из Лас-вегаса совсем не скучно!</p>
+                </li>
+                <li>
+                    <h3>Мало туристов</h3>
+                    <span>№5</span>
+                    <p>Большинство едет в Гранд Каньон и толпится там</p>
+                </li>
+            </ul>
+        </section>
+        <section class="booking">
+            <h2 class="visually-hidden">Бронирование</h2>
+            <b>Заинтересовались?</b>
+            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне.</p>
+            <a class="seach-button" href="#">Поиск гостиницы в Седоне</a>
+            <img class="map" src="img/map.jpg" alt="карта Седоны" width="1200px" height="593px">
+        </section>
+    </main>
+    <footer class="main-footer">
+        <p class="hashtag">
+            #Visitsedona
+        </p>
+        <div class="footer-social">
+            <ul>
+                <li><a class="social-button" href="#">Твиттер</a></li>
+                <li><a class="social-button" href="#">Фейсбук</a></li>
+                <li><a class="social-button" href="#">Ютуб</a></li>
+            </ul>
+        </div>
+        <p class="footer-copyright">
+            <b>Website by</b>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        </p>
+    </footer>
+
+    <section class="modal modal-booking">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <label for="date-in">Дата заезда:</label>
+                <input class="booking-date" type="date" name="date-in" id="date-in" placeholder="24 апреля 2017">
+            </p>
+            <p>
+                <label for="date-out">Дата выезда:</label>
+                <input class="booking-date" type="date" name="date-out" id="date-out" placeholder="4 июля 2017">
+            </p>
+            <p>
+                <label for="adult">Взрослые:</label>
+                <input type="text" name="adult" id="adult" placeholder="3">
+            </p>
+            <p>
+                <label for="child">Дети:</label>
+                <input type="text" name="child" id="child" placeholder="0">
+            </p>
+            <button class="booking-button" type="submit">Найти</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
