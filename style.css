@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    color: #000000;
+    font-weight: 700;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #81b3d2;
+}
+
+.site-navigation a:active {
+    color: #000000;
+    opacity: 0.3;
+}
+
+h1 {
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.advantages .sentence {
+    color: #333333;
+    text-align: center;
+} 
+
+.advantages-list {
+    list-style: none;
+}
+
+.advantages-item {
+    text-align: center;
+}
+
+.advantages-item {
+    line-height: 21px;
+    color: #333333;
+}
+
+.advantages-item h3{
+    font-size: 21px;
+    color: #000000;
+}
+
+.advantages-item-blue div,
+.advantages-item-blue h3{
+    color: #ffffff;
+
+    background-color: #81b3d2;
+}
+
+.advantages-item-grey {
+    background-color: #eeeeee;
+}
+
+.more-advantages {
+    list-style: none;
+}
+
+.booking {
+    text-align: center;
+}
+
+.booking h2 {
+    font-size: 30px;
+    line-height: 24px;
+}
+
+.booking p {
+    color: #333333;
+    line-height: 24px;
+}
+
+.seach-button {
+    color: #ffffff;
+    font-size: 21px;
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: #766357;
+}
+
+.seach-button:hover,
+.seach-button:focus {
+    background-color: #604e43;
+}
+
+.seach-button:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #503e33;
+}
+
+.main-footer {
+    opacity: 0.9;
+}
+
+.main-footer .hashtag {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.hashtag,
+.footer-social,
+.footer-copyright {
+    text-align: center;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.social-button {
+    color: #ffffff;
+
+    background-color: #81b3d2;
+}
+
+.footer-copyright a {
+    color: #333333;
+}
+
+.modal {
+    font-weight: 700;
+}
+
+.booking-form input {
+    font: inherit;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+}
+
+.booking-form input:hover {
+    background-color: #ebebeb;
+    border-color: #ebebeb;
+}
+
+.booking-form input:focus {
+    background-color: #ffffff;
+    border: 2px solid #f5f5f5;
+}
+
+.booking-form .booking-button {
+    font: inherit;
+    color: #ffffff;
+    font-size: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: #81b3d2;
+    border: none;
+}
+
+.booking-form .booking-button:hover,
+.booking-form .booking-button:focus {
+    background-color: #669ec0;
+}
+
+.booking-form .booking-button:active {
+    color: rgba(255, 255, 255, 0.3);
+    
+    background-color: #5496bd;
+}
