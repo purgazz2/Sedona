@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Седона</title>
 </head>
 
@@ -12,12 +14,12 @@
             <ul class="site-navigation">
                 <li><a href="info.html">Информация</a></li>
                 <li><a href="media.html">Фото и видео</a></li>
-                <li><a href="map.html">Карта штата</a></li>
+                <li><a class="site-navigation-current"  href="map.html">Карта штата</a></li>
                 <li><a>Гостиницы</a></li>
             </ul>
         </nav>
         <a class="header-logo" href="index.html">
-            <img src="img/header-logo.jpg" alt="Логотип">
+            <img src="img/header-logo.png" alt="Логотип" width="138px" height="70px">
         </a>
     </header>
     <main class="container">
@@ -59,27 +61,29 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset>
-                    <legend>Стоимость в сутки:</legend>
-                    <input type="text" name="" id="" placeholder="От 0">
-                    <input type="text" name="" id="" placeholder="До 3000">
-                </fieldset>
-                <button class="filter-button" type="submit">Показать</button>
+                <div>
+                    <fieldset>
+                        <legend>Стоимость в сутки (P):</legend>
+                        <input type="text" name="" id="" placeholder="От 0">
+                        <input type="text" name="" id="" placeholder="До 3000">
+                    </fieldset>
+                    <button class="filter-button" type="submit">Показать</button>
+                </div>                
             </form>
         </section>
         <section class="catalog">
             <h2 class="visually-hidden">Каталог гостиниц</h2>
             <div class="sort">
-                <b>Найдено: 3</b>
+                <span class="sort-amount">Найдено: 3</span>
                 <span>Сортировка:</span>
                 <ul class="sort-type">
-                    <li><a href="#">По цене</a></li>
-                    <li><a href="#">По типу</a></li>
-                    <li><a href="#">По рейтингу</a></li>
+                    <li class="sort-item"><a class="sort-item-current" href="#">По цене</a></li>
+                    <li class="sort-item"><a href="#">По типу</a></li>
+                    <li class="sort-item"><a href="#">По рейтингу</a></li>
                 </ul>
                 <ul class="sort-increment">
-                    <li><a href="#">По возростанию</a></li>
-                    <li><a href="#">По убыванию</a></li>
+                    <li class="sort-item"><a href="#">По возростанию</a></li>
+                    <li class="sort-item"><a href="#">По убыванию</a></li>
                 </ul>
             </div>
             <ul class="catalog-list">
@@ -87,34 +91,38 @@
                     <div>
                         <img src="img/hotel-1.jpg" alt="Amara resort & spa" width="135px" height="90px">
                         <div>
-                            <h3>Amara resort & spa</h3>
+                            <a href="#">
+                                <h3>Amara resort & spa</h3>
+                            </a>                            
                             <p>
                                 <span>Гостиница</span>
-                                <a class="button" href="#">Подробнее</a>
+                                <a class="catalog-button detail" href="#">Подробнее</a>
                             </p>
                             <p>
                                 <span>От 4000 Р.</span>
-                                <a class="button" href="#">Забронировать</a>
+                                <a class="catalog-button catalog-booking" href="#">Забронировать</a>
                             </p>
                         </div>
                     </div>
                     <div>
                         <span>4 звезды</span>
-                        <span>Рейтинг: 8,5</span>
+                        <span class="rating">Рейтинг: 8,5</span>
                     </div>
                 </li>
                 <li class="catalog-item">
                     <div>
                         <img src="img/hotel-2.jpg" alt="Desert Quail Inn" width="135px" height="90px">
                         <div>
-                            <h3>Desert Quail Inn</h3>
+                            <a href="#">
+                                <h3>Desert Quail Inn</h3>
+                            </a>                            
                             <p>
                                 <span>Мотель</span>
-                                <a class="button" href="#">Подробнее</a>
+                                <a class="catalog-button detail" href="#">Подробнее</a>
                             </p>
                             <p>
                                 <span>От 3500 Р.</span>
-                                <a class="button" href="#">Забронировать</a>
+                                <a class="catalog-button catalog-booking" href="#">Забронировать</a>
                             </p>
                         </div>
                     </div>
@@ -127,14 +135,16 @@
                     <div>
                         <img src="img/hotel-3.jpg" alt="Villas at Poco Diablo" width="135px" height="90px">
                         <div>
-                            <h3>Villas at Poco Diablo</h3>
+                            <a href="#">
+                                <h3>Villas at Poco Diablo</h3>
+                            </a>                            
                             <p>
                                 <span>Апартаменты</span>
-                                <a class="button" href="#">Подробнее</a>
+                                <a class="catalog-button detail" href="#">Подробнее</a>
                             </p>
                             <p>
                                 <span>От 2000 Р.</span>
-                                <a class="button" href="#">Забронировать</a>
+                                <a class="catalog-button catalog-booking" href="#">Забронировать</a>
                             </p>
                         </div>
                     </div>

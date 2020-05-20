@@ -113,6 +113,130 @@ h1 {
     background-color: #503e33;
 }
 
+.filter {
+    background-color: #505a62;
+    background-position: top center;
+    background-image: url("/img/filter-background.jpg");
+    background-repeat: no-repeat;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.filter ul {
+    list-style: none;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.filter input[type = "text"] {
+    color: #ffffff;
+    line-height: 21px;
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
+
+.filter-button {
+    font: inherit;
+    color: #ffffff;
+    line-height: 21px;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
+
+.sort {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.catalog .sort-amount {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.sort ul {
+    list-style: none;
+}
+
+.sort-item a {
+    color: #000000;
+
+    border-bottom: 1px dotted #81b3d2;            
+    opacity: 0.3;
+}
+
+.sort-item a:hover,
+.sort-item a:focus {
+    color: #81b3d2;
+
+    opacity: 1;
+}
+
+.sort-item a:active {
+    color: #000000;
+
+    border: none;
+    opacity: 1;
+}
+
+.sort-item .sort-item-current {
+    color: #81b3d2;
+
+    border: none;
+    opacity: 1;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item h3 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.catalog-item span {
+    line-height: 21px;
+    color: #333333;
+}
+
+.catalog-item .rating {
+    color: #666666;
+
+    background-color: #f2f2f2;
+}
+
+.catalog-button {
+    font-weight: 700;
+    line-height: 21px;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.catalog-item .detail {
+    background-color: #81b3d2;
+}
+
+.catalog-item .catalog-booking {
+    background-color: #766357;
+}
+
 .main-footer {
     opacity: 0.9;
 }
