@@ -1,4 +1,5 @@
 body {
+    min-width: 1200px;
     margin: 0;
     padding: 0;
 
@@ -19,7 +20,7 @@ body {
     margin: 0 auto;
 
     background-color: #ffffff;
-    box-shadow: 5px 0 15px rgba(0, 1, 1, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 a {
@@ -305,12 +306,16 @@ h1 {
     line-height: 24px;
 }
 
-.booking p {
+.booking .booking-subtitle {
     margin: 0;
     margin-bottom: 50px;
 
     color: #333333;
     line-height: 24px;
+}
+
+.booking .booking-column {
+    position: relative;
 }
 
 .seach-button {
@@ -880,7 +885,41 @@ h1 {
 }
 
 .modal {
+    position: absolute;
+
+    width: 460px;
+    padding: 55px;
+
     font-weight: 700;
+
+    background-color: #ffffff;
+}
+
+.booking-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.booking-form p {
+    position: relative;
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 115px;
+}
+
+.booking-form .input-amount {
+    margin-bottom: 55px;
+}
+
+.booking-form label {
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+
+.child-amount label {
+    left: 50px;
 }
 
 .booking-form input {
@@ -890,6 +929,82 @@ h1 {
 
     background-color: #f2f2f2;
     border: 2px solid #f2f2f2;
+    box-sizing: border-box;
+}
+
+.booking-form .booking-date {
+    width: 345px;
+    padding: 4px 13px;
+    padding-right: 40px;
+}
+
+.input-date .calendar,
+.input-amount .amount-minus,
+.input-amount .amount-plus {
+    position: absolute;
+    top: 2px;
+    right: 76px;
+
+    width: 36px;
+    height: 36px;
+
+    cursor: pointer;
+}
+
+.input-date .calendar {
+    right: 2px;
+    background-image: url(/img/calendar.svg);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+}
+
+.input-date .calendar:hover {
+    background-image: url(/img/calendar-hover.svg);
+}
+
+.input-date .calendar:active {
+    background-image: url(/img/calendar-active.svg);
+}
+
+.input-amount .amount-plus {
+    right: 2px;
+}
+
+.input-amount .amount-minus::before,
+.input-amount .amount-plus::before,
+.input-amount .amount-plus::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 12px;
+
+    width: 12px;
+    height: 3px;
+
+    background-color: #a9a9a9;
+}
+
+.input-amount .amount-plus::after {
+    transform: rotate(90deg);
+}
+
+.amount-minus:hover::before,
+.amount-plus:hover::before,
+.amount-plus:hover::after{
+    background-color: #000000;
+}
+
+.amount-minus:active::before,
+.amount-plus:active::before,
+.amount-plus:active::after{
+    background-color: #81b3d2;
+}
+
+.booking-form .booking-amount {
+    width: 114px;
+    padding: 4px 36px;
+
+    text-align: center;
 }
 
 .booking-form input:hover {
@@ -903,6 +1018,9 @@ h1 {
 }
 
 .booking-form .booking-button {
+    width: 100%;
+    padding: 15px;
+
     font: inherit;
     color: #ffffff;
     font-size: 21px;

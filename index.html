@@ -82,8 +82,39 @@
             </section>
             <section class="booking">
                 <h2>Заинтересовались?</h2>
-                <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне.</p>
-                <a class="seach-button" href="#">Поиск гостиницы в Седоне</a>
+                <p class="booking-subtitle">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне.</p>
+                <div class="booking-column">
+                    <a class="seach-button" href="#">Поиск гостиницы в Седоне</a>
+                    <section class="modal">
+                        <h2 class="visually-hidden">Поиск гостиницы</h2>
+                        <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+                            <p class="input-date">
+                                <label for="date-in">Дата заезда:</label>
+                                <input class="booking-date" type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
+                                <span class="calendar"></span>
+                            </p>
+                            <p class="input-date">
+                                <label for="date-out">Дата выезда:</label>
+                                <input class="booking-date" type="text" name="date-out" id="date-out" placeholder="4 июля 2017">
+                                <span class="calendar"></span>
+                            </p>
+                            <p class="input-amount">
+                                <label for="adult">Взрослые:</label>
+                                <span class="amount-minus"></span>
+                                <input class="booking-amount" type="text" name="adult" id="adult" placeholder="3">
+                                <span class="amount-plus"></span>
+                            </p>
+                            <p class="input-amount child-amount">
+                                <label for="child">Дети:</label>
+                                <span class="amount-minus"></span>
+                                <input class="booking-amount" type="text" name="child" id="child" placeholder="0">
+                                <span class="amount-plus"></span>
+                            </p>
+                            <button class="booking-button" type="submit">Найти</button>
+                        </form>
+                    </section>
+                </div>
+                
             </section>
             <div class="map">
                 <img src="img/map.jpg" alt="карта Седоны" width="1200" height="593">
@@ -138,31 +169,9 @@
 
                 </a>
             </p>
-        </footer>
-    </div>
+        </footer>       
 
-    <section class="modal modal-booking">
-        <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
-            <p>
-                <label for="date-in">Дата заезда:</label>
-                <input class="booking-date" type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
-            </p>
-            <p>
-                <label for="date-out">Дата выезда:</label>
-                <input class="booking-date" type="text" name="date-out" id="date-out" placeholder="4 июля 2017">
-            </p>
-            <p>
-                <label for="adult">Взрослые:</label>
-                <input type="text" name="adult" id="adult" placeholder="3">
-            </p>
-            <p>
-                <label for="child">Дети:</label>
-                <input type="text" name="child" id="child" placeholder="0">
-            </p>
-            <button class="booking-button" type="submit">Найти</button>
-        </form>
-    </section>
+    </div>    
 
 </body>
 
