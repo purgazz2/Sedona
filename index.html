@@ -62,6 +62,7 @@
                         <span>— №5 —</span>
                         <p>Большинство едет в Гранд Каньон и<br> толпится там</p>
                     </li>
+                    
                     <li class="more-advantages">
                         <ul>
                             <li class="advantages-item more-advantages-item advantages-item-motel">
@@ -113,11 +114,12 @@
                             <button class="booking-button" type="submit">Найти</button>
                         </form>
                     </section>
-                </div>
-                
+                </div>                
             </section>
+
             <div class="map">
-                <img src="img/map.jpg" alt="карта Седоны" width="1200" height="593">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d704189.6618408312!2d-111.89678163414136!3d34.926505423735236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1590680115791!5m2!1sru!2sru" width="1200" height="593" style="border:0;" allowfullscreen="" aria-hidden="false"></iframe>
+                <p><img src="img/map.jpg" alt="карта Седоны" width="1200" height="593"></p>
             </div>
         </main>
 
@@ -127,10 +129,10 @@
             </p>
             <ul class="footer-social">
                 <li><a class="social-button social-button-twitter" href="#"><span class="visually-hidden">Твиттер</span>
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="15px"
                             viewBox="0 0 17 15" enable-background="new 0 0 17 15" xml:space="preserve">
-                            <image overflow="visible" width="17" height="15" xlink:href="t.png">
+                            <image overflow="visible" width="17" height="15" xlink:href="">
                             </image>
                             <g id="W6EeEF_1_">
                                 <g>
@@ -146,17 +148,17 @@
                     </a></li>
                 <li><a class="social-button social-button-facebook" href="#"><span
                             class="visually-hidden">Фейсбук</span>
-                        <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="22px"
                             viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
                             <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z" />
                         </svg></a></li>
                 <li><a class="social-button social-button-youtube" href="#"><span class="visually-hidden">Ютуб</span>
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="16px"
                             viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
-                            <image overflow="visible" enable-background="new" width="20" height="16"
-                                xlink:href="youtube.png">
+                            <image overflow="visible" width="20" height="16"
+                                xlink:href="">
                             </image>
                             <path fill="#FFFFFF" d="M17,0H3C1.35,0,0,1.35,0,3v10c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0z
                     M6.027,11.998V4.002L15.014,8L6.027,11.998z" />
@@ -171,7 +173,34 @@
             </p>
         </footer>       
 
-    </div>    
+    </div> 
+    
+    <script>
+        var seach = document.querySelector(".seach-button");
+        var popup = document.querySelector(".modal");
+
+        var form = popup.querySelector("form");
+        var dateIn = popup.querySelector("[name=date-in]");
+        var dateOut = popup.querySelector("[name=date-out]");
+        var adultAmount = popup.querySelector("[name=adult]");
+        var childAmount = popup.querySelector("[name=child]");
+
+        seach.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popup.classList.toggle("modal-show");
+            popup.classList.remove("modal-error");
+            dateIn.focus();
+        });
+
+        form.addEventListener("submit", function(evt) {            
+            if (!dateIn.value || !dateOut.value || !childAmount || !adultAmount) {
+                evt.preventDefault();
+                popup.classList.remove("modal-error");
+                popup.offsetWidth = popup.offsetWidth;
+                popup.classList.add("modal-error");
+            }
+        });
+    </script>
 
 </body>
 

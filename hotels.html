@@ -28,47 +28,49 @@
             <section class="filters">
                 <h2 class="visually-hidden">фильтр гостиниц</h2>
                 <form class="filter" action="https://echo.htmlacademy.ru" method="POST">
-                    <fieldset class="checkbox-column">
-                        <legend>Инфраструктура:</legend>
-                        <ul>
-                            <li class="filter-option">
-                                <input class="visually-hidden filter-checkbox" type="checkbox" name="pool"
-                                    id="filter-pool" checked>
-                                <label for="filter-pool">Бассейн</label>
-                            </li>
-                            <li class="filter-option">
-                                <input class="visually-hidden filter-checkbox" type="checkbox" name="parking"
-                                    id="filter-parking">
-                                <label for="filter-parking">Парковка</label>
-                            </li>
-                            <li class="filter-option">
-                                <input class="visually-hidden filter-checkbox" type="checkbox" name="wifi"
-                                    id="filter-wifi">
-                                <label for="filter-wifi">Wi-Fi</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <fieldset class="checkbox-column">
-                        <legend>Тип жилья:</legend>
-                        <ul>
-                            <li class="filter-option">
-                                <input class="visually-hidden filter-checkbox" type="checkbox" name="hotel"
-                                    id="filter-hotel" checked>
-                                <label for="filter-hotel">Гостиница</label>
-                            </li>
-                            <li class="filter-option">
-                                <input class="visually-hidden filter-checkbox" type="checkbox" name="motel"
-                                    id="filter-motel" checked>
-                                <label for="filter-motel">Мотель</label>
-                            </li>
-                            <li class="filter-option">
-                                <input class="visually-hidden filter-checkbox" type="checkbox" name="apartments"
-                                    id="filter-apartments" checked>
-                                <label for="filter-apartments">Апартаменты</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <div class="price-column">
+                    <div class="column-left">
+                        <fieldset class="checkbox-column">
+                            <legend>Инфраструктура:</legend>
+                            <ul>
+                                <li class="filter-option">
+                                    <input class="visually-hidden filter-checkbox" type="checkbox" name="pool"
+                                        id="filter-pool" checked>
+                                    <label for="filter-pool">Бассейн</label>
+                                </li>
+                                <li class="filter-option">
+                                    <input class="visually-hidden filter-checkbox" type="checkbox" name="parking"
+                                        id="filter-parking">
+                                    <label for="filter-parking">Парковка</label>
+                                </li>
+                                <li class="filter-option">
+                                    <input class="visually-hidden filter-checkbox" type="checkbox" name="wifi"
+                                        id="filter-wifi">
+                                    <label for="filter-wifi">Wi-Fi</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="checkbox-column">
+                            <legend>Тип жилья:</legend>
+                            <ul>
+                                <li class="filter-option">
+                                    <input class="visually-hidden filter-checkbox" type="checkbox" name="hotel"
+                                        id="filter-hotel" checked>
+                                    <label for="filter-hotel">Гостиница</label>
+                                </li>
+                                <li class="filter-option">
+                                    <input class="visually-hidden filter-checkbox" type="checkbox" name="motel"
+                                        id="filter-motel" checked>
+                                    <label for="filter-motel">Мотель</label>
+                                </li>
+                                <li class="filter-option">
+                                    <input class="visually-hidden filter-checkbox" type="checkbox" name="apartments"
+                                        id="filter-apartments" checked>
+                                    <label for="filter-apartments">Апартаменты</label>
+                                </li>                            
+                            </ul>
+                        </fieldset>                        
+                    </div>                    
+                    <div class="column-right">
                         <fieldset>
                             <legend>Стоимость в сутки (P):</legend>
                             <div class="price-controls">
@@ -134,10 +136,10 @@
                         </div>
                         <div class="rating-column">
                             <div class="stars">
-                                <img src="img/star.svg" alt="звезда" width="18px" height="17px">
-                                <img src="img/star.svg" alt="звезда" width="18px" height="17px">
-                                <img src="img/star.svg" alt="звезда" width="18px" height="17px">
-                                <img src="img/star.svg" alt="звезда" width="18px" height="17px">
+                                <img src="img/star.svg" alt="звезда" width="18" height="17">
+                                <img src="img/star.svg" alt="звезда" width="18" height="17">
+                                <img src="img/star.svg" alt="звезда" width="18" height="17">
+                                <img src="img/star.svg" alt="звезда" width="18" height="17">
                                 <span class="visually-hidden">4 звезды</span>
                             </div>
                             <span class="rating">Рейтинг: 8,5</span>
@@ -164,9 +166,9 @@
                         </div>
                         <div class="rating-column">
                             <div class="stars">
-                                <img src="img/star.svg" alt="звезда" width="18px" height="17px">
-                                <img src="img/star.svg" alt="звезда" width="18px" height="17px">
-                                <img src="img/star.svg" alt="звезда" width="18px" height="17px">
+                                <img src="img/star.svg" alt="звезда" width="18" height="17">
+                                <img src="img/star.svg" alt="звезда" width="18" height="17">
+                                <img src="img/star.svg" alt="звезда" width="18" height="17">
                                 <span class="visually-hidden">4 звезды</span>
                             </div>
                             <span class="rating">Рейтинг: 8,9</span>
@@ -193,8 +195,8 @@
                         </div>
                         <div class="rating-column">
                             <div class="stars">
-                                <img src="img/star.svg" alt="звезда" width="18px" height="17px">
-                                <img src="img/star.svg" alt="звезда" width="18px" height="17px">
+                                <img src="img/star.svg" alt="звезда" width="18" height="17">
+                                <img src="img/star.svg" alt="звезда" width="18" height="17">
                                 <span class="visually-hidden">4 звезды</span>
                             </div>
                             <span class="rating">Рейтинг: 9,2</span>
@@ -211,10 +213,10 @@
             </p>
             <ul class="footer-social">
                 <li><a class="social-button social-button-twitter" href="#"><span class="visually-hidden">Твиттер</span>
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="15px"
-                            viewBox="0 0 17 15" enable-background="new 0 0 17 15" xml:space="preserve">
-                            <image overflow="visible" width="17" height="15" xlink:href="t.png">
+                            viewBox="0 0 17 15" xml:space="preserve">
+                            <image overflow="visible" width="17" height="15" xlink:href="">
                             </image>
                             <g id="W6EeEF_1_">
                                 <g>
@@ -230,17 +232,17 @@
                     </a></li>
                 <li><a class="social-button social-button-facebook" href="#"><span
                             class="visually-hidden">Фейсбук</span>
-                        <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="22px"
-                            viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
+                            viewBox="0 0 12 22" xml:space="preserve">
                             <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z" />
                         </svg></a></li>
                 <li><a class="social-button social-button-youtube" href="#"><span class="visually-hidden">Ютуб</span>
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="16px"
                             viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
-                            <image overflow="visible" enable-background="new" width="20" height="16"
-                                xlink:href="youtube.png">
+                            <image overflow="visible" width="20" height="16"
+                                xlink:href="">
                             </image>
                             <path fill="#FFFFFF" d="M17,0H3C1.35,0,0,1.35,0,3v10c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0z
                     M6.027,11.998V4.002L15.014,8L6.027,11.998z" />
@@ -250,7 +252,7 @@
                 <span>Website by</span>
                 <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span
                         class="visually-hidden">HTML Academy</span>
-                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="115" height="41"
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="115" height="41"
                         viewBox="0 0 108.08 36.85">
                         <title>logo-htmlacademy-small1</title>
                         <path
