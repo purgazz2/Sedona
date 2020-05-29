@@ -845,7 +845,7 @@ h1 {
 
 .main-page .main-footer {
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     bottom: 0;
 
     width: 100%;
@@ -1009,10 +1009,10 @@ h1 {
 .modal {
     position: absolute;
     z-index: 3;
-    bottom: 593px;
+    bottom: 1000px;
     left: 50%;
 
-    display: none;
+    /* display: none; */
     width: 460px;
     padding: 55px;
     margin-left: -285px;
@@ -1023,7 +1023,7 @@ h1 {
 }
 
 .modal-show {
-    bottom: 198px;
+    bottom: auto;
 
     display: block;
     -webkit-animation: bounce 0.5s;
@@ -1048,7 +1048,7 @@ h1 {
     padding-left: 115px;
 }
 
-.booking-form .input-amount {
+.booking-form p:last-of-type {
     margin-bottom: 55px;
 }
 
@@ -1058,8 +1058,9 @@ h1 {
     top: 6px;
 }
 
-.child-amount label {
-    left: 50px;
+.input-amount + .input-amount label {
+    left: auto;
+    right: 140px;
 }
 
 .booking-form input {
