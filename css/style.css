@@ -870,16 +870,12 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
 }
 
-.footer-social {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 150px;
-    margin: 36px 0;
-    padding: 0;
+.footer-social{display: flex;flex-wrap: wrap;align-content: space-between;width: 150px;margin: 36px 0 30px;padding:0;list-style:none;}
 
-    list-style: none;
-}
+
+.footer-social li{min-height:54px;margin-right:6px;}
+.footer-social li:nth-child(3n){margin-right:0;}
+
 
 .footer-social .social-button {
     display: flex;
