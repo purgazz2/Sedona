@@ -83,7 +83,7 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     
     margin: 0;
-    padding: 0 75px;
+    padding: 0 72px;
 
     list-style: none;
 }
@@ -128,7 +128,7 @@ input[type="radio"].visually-hidden {
     height: 508px;
     margin-bottom: 60px;
 
-    background-image: url("/img/intro.jpg");
+    background-image: url("../img/intro.jpg");
     background-position: 0 -56px;
     background-repeat: no-repeat;
     
@@ -140,9 +140,9 @@ input[type="radio"].visually-hidden {
     margin-bottom: 50px;
 }
 
-h1 {
+.advantages h1 {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 
     font-size: 21px;
     line-height: 26px;
@@ -152,7 +152,7 @@ h1 {
 .advantages {
     position: relative;
     z-index: 5;
-    margin-bottom: 55px;
+    margin-bottom: 56px;
 }
 
 .advantages .sentence {
@@ -220,12 +220,12 @@ h1 {
 }
 
 .basic-adventages {
-    padding: 45px 50px 50px;
+    padding: 45px 45px 50px;
 }
 
 .basic-adventages span {
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 .more-advantages {
@@ -242,7 +242,7 @@ h1 {
 }
 
 .more-advantages .advantages-item {
-    padding: 55px 55px 85px;
+    padding: 55px 55px 82px;
 }
 
 .more-advantages-item h3{
@@ -262,7 +262,7 @@ h1 {
     height: 76px;
     margin-left: -38px;
 
-    background-image: url("/img/icon-1.svg");
+    background-image: url("../img/icon-1.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
 }
@@ -278,7 +278,7 @@ h1 {
     height: 76px;
     margin-left: -38px;
 
-    background-image: url("/img/icon-3.svg");
+    background-image: url("../img/icon-3.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
 }
@@ -287,14 +287,14 @@ h1 {
     content: "";
 
     position: absolute;
-    top: 5px;
+    top: 2px;
     left: 50%;
 
     width: 64px;
     height: 76px;
     margin-left: -32px;
 
-    background-image: url("/img/icon-2.svg");
+    background-image: url("../img/icon-2.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
 }
@@ -318,7 +318,7 @@ h1 {
 
 .booking .booking-subtitle {
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
 
     color: #333333;
     line-height: 24px;
@@ -369,12 +369,12 @@ h1 {
 }
 
 .filters {    
-    padding: 30px 75px 0;
+    padding: 26px 72px 0;
     margin-bottom: 30px;
 
     background-color: #505a62;
     background-position: center center;
-    background-image: url("/img/filter-background.jpg");
+    background-image: url("../img/filter-background.jpg");
     background-repeat: no-repeat;
 }
 
@@ -399,7 +399,7 @@ h1 {
 .filter .checkbox-column {
     width: 240px;
     margin-right: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 .filter legend {
@@ -422,7 +422,7 @@ h1 {
 }
 
 .filter-option {
-    margin-bottom: 23px;
+    margin-bottom: 25px;
     padding-left: 40px;
 }
 
@@ -452,13 +452,13 @@ h1 {
     width: 26px;
     height: 23px;
 
-    background-image: url("/img/checkbox-off.svg");
+    background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
 
 .filter-checkbox:checked + label::before {
-    background-image: url("/img/checkbox-on.svg");
+    background-image: url("../img/checkbox-on.svg");
 }
 
 .filter-checkbox:disabled + label::before {
@@ -469,7 +469,7 @@ h1 {
     display: block;
     margin: 0 auto;
     margin-bottom: 30px;
-    padding: 6px 35px;
+    padding: 6px 34px;
 
     font: inherit;
     color: #ffffff;
@@ -488,7 +488,7 @@ h1 {
 }
 
 .filter .column-right {
-    width: 330px;
+    width: 318px;
     margin-left: auto;
 
     color: #ffffff;
@@ -508,6 +508,7 @@ h1 {
 
     border: 2px solid #ffffff;
     border-radius: 2px;
+    box-sizing: border-box;
 }
 
 .price-controls::after {
@@ -529,7 +530,7 @@ h1 {
     display: inline-block;
 
     font-size: 14px;
-    line-height: 36px;
+    line-height: 32px;
     vertical-align: top;
 
     cursor: pointer;
@@ -537,8 +538,9 @@ h1 {
 
 .price-controls .min-price,
 .price-controls .max-price {
-    width: 90px;
-    padding-left: 65px;
+    width: 132px;
+    text-align: center;
+    padding-left: 25px;
 } 
 
 .price-controls input {
@@ -577,7 +579,7 @@ h1 {
     width: 20px;
     height: 22px;
 
-    background-image: url("/img/filter-button.svg");
+    background-image: url("../img/filter-button.svg");
     cursor: pointer;
 }
 
@@ -599,7 +601,7 @@ h1 {
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 30px;
-    padding: 0 75px;
+    padding: 0 72px;
 
     font-size: 12px;
     line-height: 18px;
@@ -703,7 +705,7 @@ h1 {
 .catalog-item {
     display: flex;
     flex-wrap: wrap;
-    padding: 25px 75px 30px;
+    padding: 25px 72px 30px;
 
     border-top: 1px solid #e5e5e5;
 }
@@ -725,7 +727,7 @@ h1 {
 
 .catalog-item h3 {
     margin: 0;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 
     font-size: 21px;
     font-weight: 700;
@@ -754,7 +756,7 @@ h1 {
 }
 
 .catalog-info span {
-    margin-bottom: 12px;
+    margin-bottom: 13px;
 }
 
 .catalog-item p {
@@ -769,7 +771,7 @@ h1 {
 
 .catalog-button {
     display: block;
-    padding: 3px 15px;
+    padding: 3px 17px;
 
     font-weight: 700;
     line-height: 21px;
@@ -838,7 +840,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 75px;
+    padding: 0 72px;
 
     background-color: #ffffff;
 }
@@ -861,7 +863,7 @@ h1 {
 }
 
 .main-footer .hashtag {
-    width: 240px;
+    width: 255px;
     margin: 0;
 
     font-size: 21px;
@@ -873,7 +875,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 150px;
-    margin: 35px 0;
+    margin: 36px 0;
     padding: 0;
 
     list-style: none;
@@ -906,7 +908,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 240px;
+    width: 255px;
     margin: 0;
 }
 
@@ -1044,7 +1046,7 @@ h1 {
 .booking-form p {
     position: relative;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
     padding-left: 115px;
 }
 
@@ -1094,17 +1096,17 @@ h1 {
 
 .input-date .calendar {
     right: 2px;
-    background-image: url("/img/calendar.svg");
+    background-image: url("../img/calendar.svg");
     background-repeat: no-repeat;
     background-position: 6px 6px;
 }
 
 .input-date .calendar:hover {
-    background-image: url("/img/calendar-hover.svg");
+    background-image: url("../img/calendar-hover.svg");
 }
 
 .input-date .calendar:active {
-    background-image: url("/img/calendar-active.svg");
+    background-image: url("../img/calendar-active.svg");
 }
 
 .input-amount .amount-plus {
